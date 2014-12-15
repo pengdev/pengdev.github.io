@@ -50,7 +50,6 @@
 				$('#nav a, .scrolly').scrolly(1000, x);
 
 			});
-		
 	});
 
 })(jQuery);

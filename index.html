@@ -13,8 +13,29 @@
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+		<!-- for pop window -->
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<style>
+			#photographing { overflow: hidden; }
+			#photographing a { display: block; float: left; }
+			#photographing a img { display: block; border: 0; }
+		
+		</style>
+		<script>
+			$(function() {
+				
+				var foo = $('#photographing');
+				foo.poptrox({
+					usePopupCaption: true
+				});
+			
+			});
+		</script>
+
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -31,6 +52,7 @@
 					<li><a href="#top">Top</a></li>
 					<li><a href="#work">Experience</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#photographing">Photographing</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -102,21 +124,21 @@
 					<div class="container">
 						<div class="row">
 							<div class="4u">
-								<article class="box style2">
+								<article class="box style1">
 									<a href="http://streambels.com" class="image featured"><img src="images/streambels.png" alt="" /></a>
 									<h3><a href="http://streambels.com">Streambels</a></h3>
 									<p>Stream what’s on your phone or tablet to any speakers, smart TV, set-top box or any other connected device in your home.</p>
 								</article>
 							</div>
 							<div class="4u">
-								<article class="box style2">
+								<article class="box style1">
 									<a href="http://allconnectsdk.com" class="image featured"><img src="images/allconnectsdk.png" alt="" /></a>
 									<h3><a href="http://allconnectsdk.com">AllConnect SDK</a></h3>
 									<p>AllConnect technology provides a unified API that allows you to build mobile apps that communicate with billions of devices. </p>
 								</article>
 							</div>
 							<div class="4u">
-								<article class="box style2">
+								<article class="box style1">
 									<a href="#" class="image featured"><img src="images/inpoint.jpg" alt="" /></a>
 									<h3><a href="#">InPoint</a></h3>
 									<p>Project InPoint  has insight in technology, concepts and business models of indoor positioning.</p>
@@ -126,16 +148,114 @@
 					</div>
 					<footer>
 						<p>Expecting more exciting projects..</p>
-						<a href="#contact" class="button big scrolly">Get in touch with me</a>
+						<a href="#photographing" class="button big scrolly">Some photographics</a>
 					</footer>
 				</article>
 			</div>
 
+		<!---PhotoGraphing-->
+			<div class="wrapper style3">
+					<div id="photographing"class="container">
+						<header>
+						<h2>Here's some photos I took.</h2>
+						<p>I always appreciate the color of the world.</p>
+						</header>
+						<div class="row">
+							<div class="4u">
+								<article class="item thumb" data-width="300">
+									<a href="images/autumn/01.jpg" class="image featured"><img src="images/autumn/01_thumb.jpg" alt="" title="Autumn"></a>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/02.jpg" class="image featured"><img src="images/autumn/02_thumb.jpg" alt="" title="Autumn"></a>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/03.jpg" class="image featured"><img src="images/autumn/03_thumb.jpg" alt="" title="Autumn"></a>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/04.jpg" class="image featured"><img src="images/autumn/04_thumb.jpg" alt="" title="Autumn"></a>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/05.jpg" class="image featured"><img src="images/autumn/05_thumb.jpg" alt="" title="Autumn"></a>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/06.jpg" class="image featured"><img src="images/autumn/06_thumb.jpg" alt="" title="Autumn"></a>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/07.jpg" class="image featured"><img src="images/autumn/07_thumb.jpg" alt="" title="Autumn"></a>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/08.jpg" class="image featured"><img src="images/autumn/08_thumb.jpg" alt="" title="Autumn"></a>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/09.jpg" class="image featured"><img src="images/autumn/09_thumb.jpg" alt="" title="Preikestolen"></a>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/10.jpg" class="image featured"><img src="images/autumn/10_thumb.jpg" alt="" title="London"></a>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/11.jpg" class="image featured"><img src="images/autumn/11_thumb.jpg" alt="" title="London"></a>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/12.jpg" class="image featured"><img src="images/autumn/12_thumb.jpg" alt="" title="Helsinki"></a>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/13.jpg" class="image featured"><img src="images/autumn/13_thumb.jpg" alt="" title="Edinburgh castle"></a>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/14.jpg" class="image featured"><img src="images/autumn/14_thumb.jpg" alt="" title="Edinburgh"></a>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="item thumb" data-width="282">
+									<a href="images/autumn/15.jpg" class="image featured"><img src="images/autumn/15_thumb.jpg" alt="" title="Paris"></a>
+								</article>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p>Expecting more wonderful trips..</p>
+						<a href="#contact" class="button big scrolly">Get in touch with me</a>
+					</footer>
+			<div>
 		<!-- Contact -->
 			<div class="wrapper style4">
 				<article id="contact" class="container 75%">
 					<header>
-						<h2>It's always nice to know some new friends.</h2>
+						<h2>It's always nice to know new friends.</h2>
 						<p>Send message to me</p>
 					</header>
 					<div>
