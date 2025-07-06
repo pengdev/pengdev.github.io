@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About Me
+permalink: /aboutme/
 ---
 
 <div class="about-hero">

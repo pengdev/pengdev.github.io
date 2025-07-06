@@ -15,8 +15,8 @@ This is the source code for Liu Peng's personal website, built with Jekyll and G
 
 - `_data/` — All experience, skills, awards, and projects are stored as YAML files for easy editing
 - `_includes/` — Reusable HTML components for experience, skills, awards, and project cards
-- `aboutme.md` — About Me page (uses data and includes)
-- `projects.md` — Projects page (uses data and includes)
+- `pages/aboutme.md` — About Me page (uses data and includes, pretty URL: `/aboutme/`)
+- `pages/projects.md` — Projects page (uses data and includes, pretty URL: `/projects/`)
 - `index.html` — Homepage
 - `assets/css/style.css` — Main stylesheet
 
