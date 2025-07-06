@@ -1,0 +1,19 @@
+<div class="project-card{% if include.featured %} featured{% endif %}">
+    <div class="project-header">
+        <h3>{{ include.title }}</h3>
+        {% if include.badge %}
+        <span class="project-badge{% if include.badge_type %} {{ include.badge_type }}{% endif %}">{{ include.badge }}</span>
+        {% endif %}
+    </div>
+    {% if include.tech %}
+    <p class="project-tech">{{ include.tech }}</p>
+    {% endif %}
+    <p class="project-description">{{ include.description }}</p>
+    {% if include.links %}
+    <div class="project-links">
+        {% for link in include.links %}
+        <a href="{{ link.url }}" class="project-link">{{ link.text }}</a>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div> 

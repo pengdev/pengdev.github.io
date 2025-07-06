@@ -1,0 +1,90 @@
+featured:
+  - title: "Mapbox Maps SDK for Android"
+    badge: "Current"
+    badge_type: ""
+    tech: "Android • OpenGL • Vector Tiles • C++ • Kotlin"
+    description: "Contributing to the core mapping technology used by millions of developers worldwide. Developing interactive, thoroughly customizable maps powered by vector tiles and OpenGL for native Android applications. Working on Mobile SDK V10 with advanced customization capabilities."
+    links:
+      - text: "View on GitHub"
+        url: "https://github.com/mapbox/mapbox-maps-android"
+
+  - title: "AllConnect Multimedia Streaming App"
+    badge: "CES 2017 Winner"
+    badge_type: "award"
+    tech: "Android • iOS • DLNA • C • Multimedia Streaming"
+    description: "Developed Android/iOS multimedia streaming application that won CES 2017 Innovation Award Honoree. Created universal solution for multimedia home networking with DLNA support and cross-platform compatibility. Enables users to stream content from mobile devices to smart TVs and connected devices."
+    links:
+      - text: "Download App"
+        url: "https://allconnect-play-stream.en.softonic.com/android"
+
+  - title: "AllConnect SDK"
+    badge: "SDK"
+    badge_type: ""
+    tech: "Android • iOS • SDK • Multimedia Streaming • API"
+    description: "Built Android/iOS multimedia streaming SDK for third-party integration, enabling developers to add streaming capabilities to their applications with comprehensive API support. Provides robust multimedia streaming functionality for cross-platform applications."
+    links:
+      - text: "Press Release"
+        url: "https://www.prnewswire.com/news-releases/tuxera-releases-allconnect-sdk-for-android-and-ios-274067031.html"
+
+research:
+  - title: "Android Filesystem Benchmark Research"
+    badge: "Research"
+    badge_type: ""
+    tech: "Android • ext4 • f2fs • Benchmarking • Python • C"
+    description: "Conducted comprehensive research analyzing storage patterns of popular Android apps and benchmarking ext4 vs f2fs filesystems during aging process. Developed scripts for fast filesystem aging and Android benchmark application for both internal and external memory testing."
+
+  - title: "Indoor Positioning System"
+    badge: "IoT"
+    badge_type: ""
+    tech: "Android • WiFi Fingerprinting • Python • Server • Positioning"
+    description: "Built indoor positioning prototype using WiFi fingerprint technology for Ericsson-funded project. Developed Android application, calibration tool, and positioning engine running on server with real-world testing in cellular network environments."
+
+  - title: "WCDMA Simulation System"
+    badge: "Winner"
+    badge_type: ""
+    tech: "LabVIEW • WCDMA • Simulation • Teaching • Telecommunications"
+    description: "Built WCDMA simulation and teaching system using LabVIEW 2010. Led team to win 2011 national NI virtual instrument contest, achieving winning prize for Xiangtan University. System provides educational tools for telecommunications engineering."
+
+demos:
+  - title: "Filesystem Fragmentation Demo"
+    badge: "Demo"
+    badge_type: ""
+    tech: "Python • React • Docker • REST APIs • Microservices"
+    description: "Built filesystem fragmentation demonstration using embedded Python backend REST APIs, React frontend, and deployed as Docker microservices. Provides visual demonstration of filesystem behavior and performance characteristics."
+
+  - title: "Distributed Filesystem Failover Demo"
+    badge: "Demo"
+    badge_type: ""
+    tech: "Node.js • React • REST APIs • Distributed Systems"
+    description: "Created distributed filesystem failover demonstration using Node.js backend REST APIs and React frontend. Showcases high-availability and fault tolerance capabilities in distributed storage systems."
+
+  - title: "DLNA Media Server Improvements"
+    badge: "Open Source"
+    badge_type: ""
+    tech: "C • DLNA • Media Server • Networking"
+    description: "Improved open source DLNA media server implementation in C. Enhanced functionality and performance for multimedia home networking solutions, contributing to the broader open source community."
+
+academic:
+  - title: "Multimedia Home Networking Solution"
+    badge: "Thesis"
+    badge_type: ""
+    tech: "Android • DLNA • Multimedia • Networking • Research"
+    description: "Master's thesis project at Aalto University: \"Developing a Solution for Multimedia Home Networking\". Researched DLNA architecture and Digital Media Server solutions, developed universal Android solution for multimedia home networking."
+    links:
+      - text: "View Thesis"
+        url: "https://www.liupeng.eu/home-networking/"
+
+  - title: "WiBrA Mobile Offloading Protocol"
+    badge: "Research"
+    badge_type: ""
+    tech: "Linux Kernel • C • Mobile Networks • IPv6"
+    description: "Implemented mobile offloading protocol in Linux kernel 3.4.4 and user space. Conducted testing work in real operator cellular network environments. Researched wireless network operator traffic management solutions for IPv6 enabled hosts."
+    links:
+      - text: "View Project Details"
+        url: "https://www.cs.helsinki.fi/group/wibra/"
+
+  - title: "IoT Transport Protocol Evaluation"
+    badge: "Research"
+    badge_type: ""
+    tech: "IoT • SPDY • CoAP • TCP • Protocol Analysis"
+    description: "Evaluated different transport layer protocols used in Internet of Things (SPDY, CoAP, TCP). Conducted comprehensive analysis of protocol performance and suitability for IoT applications." 

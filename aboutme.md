@@ -28,113 +28,17 @@ title: About Me
     <section class="experience-section">
         <h2>Professional Experience</h2>
         
-        <div class="experience-item">
-            <h3>Senior Software Engineer, Maps SDK</h3>
-            <p class="company">Mapbox • Helsinki, Finland • Sep 2019 - Present</p>
-            <ul>
-                <li>Building Mapbox Maps SDK for Android, developing interactive and thoroughly customizable maps powered by vector tiles and OpenGL</li>
-                <li>Working on Mobile SDK V10, contributing to the core mapping technology used by millions of developers worldwide</li>
-                <li>Developing native Android mapping solutions with advanced customization capabilities</li>
-                <li>Collaborating with cross-functional teams to deliver high-performance mapping solutions</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <h3>Software Engineer</h3>
-            <p class="company">Tuxera • Helsinki, Finland • Jun 2013 - Aug 2019</p>
-            <ul>
-                <li><strong>AllConnect Project</strong> - Developed Android/iOS multimedia streaming app that won CES 2017 Innovation Award Honoree</li>
-                <li><strong>AllConnect SDK</strong> - Created Android/iOS multimedia streaming SDK for third-party integration</li>
-                <li><strong>DMS Project</strong> - Improved open source DLNA media server implementation in C</li>
-                <li><strong>Android Filesystem Research</strong> - Conducted comprehensive benchmarking of ext4 and f2fs filesystems on Android</li>
-                <li><strong>Filesystem Benchmark App</strong> - Developed Android application for benchmarking internal and external memory</li>
-                <li><strong>Product Demo Projects</strong> - Built filesystem fragmentation demo using Python backend, React frontend, and Docker microservices</li>
-                <li><strong>Distributed Filesystem Demo</strong> - Created failover demo using Node.js backend REST APIs and React frontend</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <h3>Thesis Worker</h3>
-            <p class="company">Tuxera • Helsinki, Finland • Jan 2013 - Jun 2013</p>
-            <ul>
-                <li>Master's thesis: "Developing a Solution for Multimedia Home Networking" at Aalto University</li>
-                <li>Researched DLNA architecture and Digital Media Server solutions</li>
-                <li>Developed universal Android solution for multimedia home networking</li>
-                <li>Collaborated with Tuxera team while completing thesis over two-year period</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <h3>Project Developer</h3>
-            <p class="company">Aalto University / Ericsson • Espoo, Finland • Sep 2012 - May 2013</p>
-            <ul>
-                <li>Indoor positioning project funded by Ericsson, organized by Design Factory, Aalto University</li>
-                <li>Built indoor positioning prototype using WiFi fingerprint technology</li>
-                <li>Developed Android application, calibration tool, and positioning engine running on server</li>
-                <li>Researched indoor positioning technologies, concepts, and business models</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <h3>Research Assistant</h3>
-            <p class="company">University of Helsinki • Helsinki, Finland • Jun 2012 - Dec 2012</p>
-            <ul>
-                <li><strong>WiBrA Project</strong> - Implemented mobile offloading protocol in Linux kernel 3.4.4 and user space. Conducted testing work in real operator cellular network environments. <a href="https://www.cs.helsinki.fi/group/wibra/" target="_blank">View Project Details</a></li>
-                <li><strong>Internet of Things Project</strong> - Evaluated transport layer protocols (SPDY, CoAP, TCP) for IoT applications</li>
-                <li>Researched wireless network operator traffic management solutions for IPv6 enabled hosts</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <h3>Research Assistant</h3>
-            <p class="company">Xiangtan University • China • Nov 2010 - Jan 2011</p>
-            <ul>
-                <li>Built WCDMA simulation and teaching system using LabVIEW 2010</li>
-                <li>Led team of 2 in 2011 national NI virtual instrument contest</li>
-                <li>Achieved winning prize for Xiangtan University in the competition</li>
-            </ul>
-        </div>
+        {% for experience in site.data.experience %}
+            {% include experience-item.html title=experience.title company=experience.company items=experience.items %}
+        {% endfor %}
     </section>
 
     <section class="skills-section">
         <h2>Technical Skills & Expertise</h2>
         <div class="skills-grid">
-            <div class="skill-category">
-                <h3>📱 Mobile Development</h3>
-                <ul>
-                    <li>Android Development (Java, Kotlin)</li>
-                    <li>Kotlin Multiplatform</li>
-                    <li>React Native & Flutter</li>
-                    <li>App Store Optimization</li>
-                    <li>Mobile Testing & Debugging</li>
-                    <li>Maps SDK Development</li>
-                </ul>
-            </div>
-            
-            <div class="skill-category">
-                <h3>💻 Embedded Systems</h3>
-                <ul>
-                    <li>C/C++ Programming</li>
-                    <li>Linux Kernel Development</li>
-                    <li>DLNA & Multimedia Networking</li>
-                    <li>Filesystem Development & Benchmarking</li>
-                    <li>IoT Device Development</li>
-                    <li>Hardware-Software Integration</li>
-                    <li>Real-time Systems</li>
-                </ul>
-            </div>
-            
-            <div class="skill-category">
-                <h3>🌐 Web & Backend</h3>
-                <ul>
-                    <li>Node.js & Express.js</li>
-                    <li>Python (Flask)</li>
-                    <li>React Frontend Development</li>
-                    <li>RESTful APIs & Microservices</li>
-                    <li>Docker & Containerization</li>
-                    <li>Cloud Services & DevOps</li>
-                </ul>
-            </div>
+            {% for skill_category in site.data.skills %}
+                {% include skill-category.html category=skill_category.category skills=skill_category.skills %}
+            {% endfor %}
         </div>
     </section>
 
@@ -159,29 +63,9 @@ title: About Me
     <section class="awards-section">
         <h2>Honors & Awards</h2>
         
-        <div class="award-item">
-            <h3>🏆 Winner - Nokia Smart City Challenge at IoThon 2019</h3>
-            <p class="award-issuer">Department of Communications and Networking (COMNET), School of Electrical Engineering, Aalto University • May 2019</p>
-            <p>Won the Nokia smart city 5G IoT challenge at IoThon 2019, demonstrating expertise in smart city solutions and 5G IoT technologies.</p>
-        </div>
-
-        <div class="award-item">
-            <h3>🏆 CES Innovation Award Honoree</h3>
-            <p class="award-issuer">Consumer Technology Association (CTA) • February 2017</p>
-            <p>The AllConnect application was selected as the 2017 Innovation Award Honoree in software and mobile apps section. The CES Innovation Awards honors outstanding design and engineering in consumer technology products.</p>
-        </div>
-
-        <div class="award-item">
-            <h3>🏆 National NI Virtual Instrument Contest Winner</h3>
-            <p class="award-issuer">National Instruments • 2011</p>
-            <p>Led team to win the 2011 national NI virtual instrument contest for Xiangtan University with the WCDMA simulation and teaching system project.</p>
-        </div>
-
-        <div class="award-item">
-            <h3>🎓 Academic Excellence Awards</h3>
-            <p class="award-issuer">Xiangtan University • 2007-2011</p>
-            <p>First-class scholarship (twice), Third-class scholarship for outstanding academic performance in Electronic and Information Engineering.</p>
-        </div>
+        {% for award in site.data.awards %}
+            {% include award-item.html title=award.title issuer=award.issuer description=award.description %}
+        {% endfor %}
     </section>
 
     <section class="interests-section">
@@ -195,5 +79,4 @@ title: About Me
             <li><strong>Mentoring</strong> - Helping junior developers grow their skills and navigate their careers in tech</li>
         </ul>
     </section>
-
 </div>

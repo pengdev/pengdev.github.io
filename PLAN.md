@@ -9,6 +9,24 @@
 - ✅ Easy to maintain and update
 - ✅ Professional appearance for career/networking
 
+## 🔄 Current Refactoring Plan (2024)
+
+### ✅ Refactor Complete
+- ✅ Visual design fully restored to original (cards, spacing, hover effects, titles)
+- ✅ Data-driven structure: all content in YAML files
+- ✅ Reusable includes for experience, skills, awards, and projects
+- ✅ Clean markdown for About and Projects pages
+- ✅ All spacing, hover, and button effects match original
+
+### 🛠️ Maintenance
+- Update YAML files in `_data/` for content changes
+- Use includes for new sections/components
+- Test locally before pushing to GitHub
+
+### 🚀 Next Steps
+- Continue to keep content and design in sync
+- Consider adding automated visual regression tests for future refactors
+
 ## 🧹 Repository Cleanup (2024)
 
 - Removed all legacy/demo/config files: `maps/`, `Appraisals`, `README.txt`, `LICENSE.txt`, `staticman.yml`, `tags.html`, `feed.xml`, `CHANGELOG.md`
@@ -30,14 +48,21 @@
 pengdev.github.io/
 ├── _config.yml          # Site configuration
 ├── index.html           # Homepage
-├── aboutme.md           # About page
-├── projects.md          # Projects showcase
+├── aboutme.md           # About page (clean markdown)
+├── projects.md          # Projects showcase (clean markdown)
 ├── assets/              # CSS, images
 │   ├── css/style.css    # Main stylesheet
 │   └── img/             # Images (avatar, etc.)
 ├── css/                 # Additional styles
-├── _layouts/            # Jekyll layouts
+├── _layouts/            # Jekyll layouts (card rendering)
+│   ├── default.html
+│   ├── about.html       # About page layout with cards
+│   └── projects.html    # Projects page layout with cards
 ├── _includes/           # Reusable components
+│   ├── experience-item.html
+│   ├── skill-category.html
+│   ├── project-card.html
+│   └── award-item.html
 ├── 404.html             # Custom 404 page
 ├── favicon.ico          # Site favicon
 ├── LICENSE              # License
@@ -54,6 +79,7 @@ pengdev.github.io/
 - **Modern** - Contemporary typography and spacing
 - **Professional** - Suitable for business contexts
 - **Accessible** - Good contrast, readable fonts
+- **Card-Based** - Content organized in visually appealing cards
 
 ### ✅ Color Palette - Implemented
 - **Primary**: #43B3E0 (Professional blue)
@@ -71,8 +97,8 @@ pengdev.github.io/
 ## 📄 Content Structure
 
 - **Homepage**: Professional intro, feature cards, CTA
-- **About Me**: Avatar, background, skills, education, interests
-- **Projects**: Featured projects, research, demos, academic work
+- **About Me**: Avatar, background, skills cards, education cards, interests
+- **Projects**: Featured project cards, research cards, demo cards, academic cards
 
 ## 🚀 Status
 
@@ -80,6 +106,7 @@ pengdev.github.io/
 - ✅ Repository fully cleaned and optimized (2024)
 - ✅ No legacy/demo/config/blog/comment/tag files remain
 - ✅ Minimal, modern, and easy to maintain
+- 🔄 **In Progress**: Restoring card-based design after refactoring
 
 ## 🎯 Success Metrics
 
@@ -113,6 +140,7 @@ pengdev.github.io/
 - ✅ Responsive grid layouts
 - ✅ Optimized spacing and visual hierarchy
 - ✅ Consistent layout structure across all pages
+- ✅ Card-based content organization
 
 ### Technical Improvements
 - ✅ Custom CSS for better performance
@@ -121,6 +149,7 @@ pengdev.github.io/
 - ✅ Improved accessibility and SEO
 - ✅ Clean, maintainable code structure
 - ✅ Responsive design with mobile-first approach
+- ✅ Jekyll layouts and includes for better structure
 
 ## 📋 Current Status
 
@@ -133,6 +162,11 @@ pengdev.github.io/
 - SEO optimization
 - Performance optimization
 - Consistent styling across pages
+- Improved code structure with layouts and includes
+
+### 🔄 In Progress
+- Restoring original card-based visual design
+- Ensuring visual consistency after refactoring
 
 ### 🔄 Future Enhancements (Optional)
 - Blog section for technical articles
@@ -198,8 +232,6 @@ pengdev.github.io/
 - **URL**: https://pengdev.github.io
 - **Status**: Active and deployed
 - **Performance**: Optimized
-- **Mobile**: Fully responsive
-- **SEO**: Optimized
 
 ### ✅ Maintenance Plan
 - Monthly content reviews

@@ -1,0 +1,9 @@
+<div class="experience-item">
+    <h3>{{ include.title }}</h3>
+    <p class="company">{{ include.company }}</p>
+    <ul>
+        {% for item in include.items %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</div> 
