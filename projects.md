@@ -148,12 +148,4 @@ title: Projects
         </div>
     </section>
 
-    <section class="contact-section">
-        <h2>Interested in Collaboration?</h2>
-        <p>I'm always open to discussing new projects, research opportunities, or technical collaborations. Whether you're interested in mobile development, IoT solutions, or mapping technologies, let's connect!</p>
-        <div class="contact-links">
-            <a href="contact" class="btn btn-primary">Get In Touch</a>
-            <a href="https://github.com/pengdev" class="btn btn-secondary">View GitHub</a>
-        </div>
-    </section>
 </div> 

@@ -12,6 +12,7 @@ A modern, professional personal website showcasing software engineering expertis
 - Easy markdown-based content management
 - Interactive elements and professional avatar
 - Consistent layout and unified design
+- Clean, minimalist contact approach (footer-based)
 
 ## 🏗️ Technology Stack
 
@@ -54,6 +55,26 @@ pengdev.github.io/
 - Cleaned up unused/empty directories and files
 - Now the repo is minimal, modern, and easy to maintain
 
+## 🎯 Recent Updates (2024)
+
+### Header Improvements
+- Replaced text logo with professional avatar image
+- Optimized header height and navigation alignment
+- Added hover effects and responsive sizing
+- Improved vertical alignment of navigation buttons
+
+### Contact System Redesign
+- Removed contact cards from all pages (Home, About, Projects)
+- Moved contact information to footer for cleaner design
+- Simplified contact approach with mailto links and GitHub profile
+- Maintained accessibility while reducing visual clutter
+
+### Content Refinements
+- Updated About Me page with current skills (removed iOS, added Kotlin Multiplatform)
+- Added personal interests section
+- Improved content width consistency across pages
+- Enhanced avatar display with fallback initials
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -72,7 +93,7 @@ Push to `main` branch to deploy to GitHub Pages.
 
 ## 📄 Pages
 
-- **Homepage**: Professional intro, feature cards, CTA
+- **Homepage**: Professional intro, feature cards, clean layout
 - **About Me**: Avatar, background, skills, education, interests
 - **Projects**: Featured projects, research, demos, academic work
 
@@ -81,16 +102,20 @@ Push to `main` branch to deploy to GitHub Pages.
 - **Colors**: #43B3E0 (primary), #FFFFFF (background), #3e3e3e (text), #888 (muted), #ddd (border)
 - **Typography**: Open Sans (Google Fonts)
 - **Layout**: 1200px/1000px max width, CSS Grid/Flexbox, responsive
+- **Contact**: Footer-based with mailto links and social profiles
 
 ## 📱 Mobile Optimization
 
 - Fully responsive, touch-friendly, fast loading
+- Optimized header for mobile devices
+- Consistent spacing across all screen sizes
 
 ## 🔧 Maintenance
 
 - Update content as needed in markdown files
 - Keep avatar and contact info current
 - Review and refresh projects/skills regularly
+- Monitor GitHub Pages deployment status
 
 ## 📚 Resources
 

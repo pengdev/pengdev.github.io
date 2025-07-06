@@ -196,12 +196,4 @@ title: About Me
         </ul>
     </section>
 
-    <section class="contact-section">
-        <h2>Let's Connect</h2>
-        <p>I'm always interested in new opportunities, collaborations, and interesting projects. Whether you want to discuss a potential project, share ideas, or just say hello, feel free to reach out!</p>
-        <div class="contact-links">
-            <a href="mailto:liupengking1@gmail.com" class="btn btn-primary">Get In Touch</a>
-            <a href="https://github.com/pengdev" class="btn btn-secondary">View GitHub</a>
-        </div>
-    </section>
 </div>
