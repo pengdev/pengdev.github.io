@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% seo %}
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="nav-brand">
+                    <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                    <li><a href="{{ '/aboutme' | relative_url }}">About</a></li>
+                    <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        {% if page.layout == 'default' and page.url == '/' %}
+            <!-- Hero section for homepage only -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Hi, I'm Liu Peng 👋</h1>
+                        <p class="hero-subtitle">Software Engineer specializing in mobile development and embedded systems</p>
+                        <div class="hero-actions">
+                            <a href="{{ '/aboutme' | relative_url }}" class="btn btn-primary">Learn More</a>
+                            <a href="{{ '/projects' | relative_url }}" class="btn btn-secondary">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+
+        <div class="content-wrapper">
+            <div class="container">
+                {{ content }}
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:{{ site.social-network-links.email }}" class="social-link">Email</a>
+                    <a href="https://github.com/{{ site.social-network-links.github }}" class="social-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/{{ site.social-network-links.linkedin }}/" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
