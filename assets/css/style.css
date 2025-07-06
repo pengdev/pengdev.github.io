@@ -657,12 +657,17 @@ li {
     }
     
     .avatar {
-        width: 80px;
-        height: 80px;
+        width: 120px !important;
+        height: 120px !important;
     }
-    
+    .avatar img {
+        width: 120px !important;
+        height: 120px !important;
+    }
     .avatar-fallback {
-        font-size: 1.5rem;
+        width: 120px !important;
+        height: 120px !important;
+        font-size: 2.5rem !important;
     }
 }
 
