@@ -1,4 +1,4 @@
-<div class="experience-item">
+<div class="experience-item{% if include.class %} {{ include.class }}{% endif %}">
     <h3>{{ include.title }}</h3>
     <p class="company">{{ include.company }}</p>
     <ul>

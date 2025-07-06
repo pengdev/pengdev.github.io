@@ -5,18 +5,19 @@ This is the source code for Liu Peng's personal website, built with Jekyll and G
 ## ✨ Features
 - Modern, responsive design
 - About Me, Projects, and Home pages
-- Card-based layout for experience, skills, awards, and projects
+- Card-based layout for experience, skills, awards, projects, and interests
 - Data-driven content using YAML files for easy updates
 - Reusable Jekyll includes for maintainability
 - Clean, readable markdown for main content
 - Compact About Me page with expandable experience section
 - Two-column layout for education and awards sections
+- Interests & Activities section with cards (icons/short descriptions coming soon)
 - Automatic deployment via GitHub Pages
 
 ## 🗂️ Project Structure
 
 - `_data/` — All experience, skills, awards, and projects are stored as YAML files for easy editing
-- `_includes/` — Reusable HTML components for experience, skills, awards, and project cards
+- `_includes/` — Reusable HTML components for experience, skills, awards, project cards, and (soon) interest cards
 - `pages/aboutme.md` — About Me page (uses data and includes, pretty URL: `/aboutme/`)
 - `pages/projects.md` — Projects page (uses data and includes, pretty URL: `/projects/`)
 - `index.html` — Homepage

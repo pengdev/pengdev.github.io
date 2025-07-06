@@ -28,7 +28,11 @@ permalink: /aboutme/
         <h2>Professional Experience</h2>
         {% assign exp = site.data.experience %}
         {% for experience in exp limit:3 %}
-            {% include experience-item.html title=experience.title company=experience.company items=experience.items %}
+            {% if forloop.first %}
+                {% include experience-item.html title=experience.title company=experience.company items=experience.items class="current" %}
+            {% else %}
+                {% include experience-item.html title=experience.title company=experience.company items=experience.items %}
+            {% endif %}
         {% endfor %}
         <div id="more-experience" style="display:none;">
         {% for experience in exp offset:3 %}
