@@ -1101,4 +1101,86 @@ li {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1rem;
     margin-bottom: 3rem;
+}
+
+/* Compact About Me Cards */
+.experience-item,
+.skill-category,
+.education-item,
+.award-item {
+    padding: 1.2rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    font-size: 0.97rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.experience-item h3,
+.skill-category h3,
+.education-item h3,
+.award-item h3 {
+    font-size: 1.08rem;
+    margin-bottom: 0.3rem;
+}
+
+.company,
+.institution,
+.award-issuer {
+    font-size: 0.92rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item ul,
+.skill-category ul {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .experience-item,
+  .skill-category,
+  .education-item,
+  .award-item {
+    padding: 0.8rem 0.5rem;
+    font-size: 0.95rem;
+  }
+  .experience-item h3,
+  .skill-category h3,
+  .education-item h3,
+  .award-item h3 {
+    font-size: 1rem;
+  }
+}
+
+/* About Me Card Grid */
+.about-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 800px) {
+  .about-card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
+
+#toggle-experience {
+  display: block;
+  margin: 1.5rem auto 0 auto;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+#toggle-experience:hover {
+  background: var(--primary-dark);
+  color: #fff;
+  box-shadow: var(--shadow);
 } 

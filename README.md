@@ -9,6 +9,8 @@ This is the source code for Liu Peng's personal website, built with Jekyll and G
 - Data-driven content using YAML files for easy updates
 - Reusable Jekyll includes for maintainability
 - Clean, readable markdown for main content
+- Compact About Me page with expandable experience section
+- Two-column layout for education and awards sections
 - Automatic deployment via GitHub Pages
 
 ## 🗂️ Project Structure

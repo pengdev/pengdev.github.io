@@ -2,20 +2,16 @@
   skills:
     - "Android Development (Java, Kotlin)"
     - "Kotlin Multiplatform"
-    - "React Native & Flutter"
-    - "App Store Optimization"
+    - "Flutter"
     - "Mobile Testing & Debugging"
     - "Maps SDK Development"
 
 - category: "💻 Embedded Systems"
   skills:
     - "C/C++ Programming"
-    - "Linux Kernel Development"
     - "DLNA & Multimedia Networking"
-    - "Filesystem Development & Benchmarking"
     - "IoT Device Development"
     - "Hardware-Software Integration"
-    - "Real-time Systems"
 
 - category: "🌐 Web & Backend"
   skills:
