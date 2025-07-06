@@ -98,13 +98,10 @@ permalink: /aboutme/
 
     <section class="interests-section">
         <h2>Interests & Activities</h2>
-        <p>Beyond software development, I'm passionate about:</p>
-        <ul>
-            <li><strong>Open Source Contribution</strong> - Active contributor to various open source projects, particularly in the mobile and IoT domains</li>
-            <li><strong>Table Tennis</strong> - Playing competitively in Finland SPTL division games</li>
-            <li><strong>Photography</strong> - Capturing moments and exploring creative expression through digital art</li>
-            <li><strong>Continuous Learning</strong> - Regularly attending conferences, workshops, and online courses to stay current with technology trends</li>
-            <li><strong>Mentoring</strong> - Helping junior developers grow their skills and navigate their careers in tech</li>
-        </ul>
+        <div class="interests-grid">
+        {% for interest in site.data.interests %}
+            {% include interest-card.html icon=interest.icon title=interest.title description=interest.description %}
+        {% endfor %}
+        </div>
     </section>
 </div>

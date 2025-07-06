@@ -11,23 +11,25 @@ This is the source code for Liu Peng's personal website, built with Jekyll and G
 - Clean, readable markdown for main content
 - Compact About Me page with expandable experience section
 - Two-column layout for education and awards sections
-- Interests & Activities section with cards (icons/short descriptions coming soon)
+- Interests & Activities section with cards and Font Awesome icons
 - Automatic deployment via GitHub Pages
 
 ## 🗂️ Project Structure
 
-- `_data/` — All experience, skills, awards, and projects are stored as YAML files for easy editing
-- `_includes/` — Reusable HTML components for experience, skills, awards, project cards, and (soon) interest cards
+- `_data/` — All experience, skills, awards, projects, and interests are stored as YAML files for easy editing
+- `_includes/` — Reusable HTML components for experience, skills, awards, project cards, and interest cards
 - `pages/aboutme.md` — About Me page (uses data and includes, pretty URL: `/aboutme/`)
 - `pages/projects.md` — Projects page (uses data and includes, pretty URL: `/projects/`)
 - `index.html` — Homepage
 - `assets/css/style.css` — Main stylesheet
+- `_layouts/default.html` — Main layout (includes Font Awesome CDN for icons)
 
 ## 🛠️ How to Edit Content
 - **Experience:** Edit `_data/experience.yml`
 - **Skills:** Edit `_data/skills.yml`
 - **Awards:** Edit `_data/awards.yml`
 - **Projects:** Edit `_data/projects.yml`
+- **Interests:** Edit `_data/interests.yml` (uses Font Awesome icon classes)
 
 ## 🧑‍💻 Local Development
 1. Install Ruby and Bundler
