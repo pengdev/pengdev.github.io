@@ -6,40 +6,53 @@ A modern, professional personal website showcasing software engineering expertis
 
 ## ✨ Features
 
-- **Modern, Professional Design** - Clean, contemporary layout suitable for career networking
-- **Mobile Responsive** - Fully optimized for all devices and screen sizes
-- **Fast Loading** - Static site generation with optimized assets
-- **SEO Optimized** - Built-in SEO features and meta tags
-- **Easy Maintenance** - Simple markdown-based content management
-- **Interactive Elements** - Hover effects, smooth transitions, and engaging user experience
-- **Professional Avatar** - Personal branding with optimized image display
-- **Consistent Layout** - Unified design language across all pages
+- Modern, professional design
+- Mobile responsive and fast loading
+- SEO optimized
+- Easy markdown-based content management
+- Interactive elements and professional avatar
+- Consistent layout and unified design
 
 ## 🏗️ Technology Stack
 
-- **Jekyll** - Static site generator
-- **Custom CSS** - Modern styling with CSS Grid and Flexbox
-- **GitHub Pages** - Free hosting and deployment
-- **Markdown** - Easy content management
-- **Font Awesome** - Professional icons
-- **Google Fonts** - Modern typography
+- Jekyll (static site generator)
+- Custom CSS (modern styling, CSS Grid/Flexbox)
+- GitHub Pages (hosting & deployment)
+- Markdown (content management)
+- Font Awesome (CDN for icons)
+- Google Fonts (typography)
 
 ## 📁 Site Structure
 
 ```
 pengdev.github.io/
 ├── _config.yml          # Site configuration
-├── index.html           # Homepage with features and CTA
-├── aboutme.md           # About page with avatar and experience
+├── index.html           # Homepage
+├── aboutme.md           # About page
 ├── projects.md          # Projects showcase
-├── assets/              # CSS, JS, images
+├── assets/              # CSS, images
 │   ├── css/style.css    # Main stylesheet
-│   └── img/             # Images including avatar
+│   └── img/             # Images (avatar, etc.)
 ├── css/                 # Additional styles
 ├── _layouts/            # Jekyll layouts
 ├── _includes/           # Reusable components
-└── README.md            # This file
+├── 404.html             # Custom 404 page
+├── favicon.ico          # Site favicon
+├── LICENSE              # License
+├── CNAME                # Custom domain
+├── README.md            # This file
+├── PLAN.md              # Project plan
+└── screenshot.png       # Site preview
 ```
+
+## 🧹 Repository Cleanup (2024)
+
+- Removed all legacy/demo/config files: `maps/`, `Appraisals`, `README.txt`, `LICENSE.txt`, `staticman.yml`, `tags.html`, `feed.xml`, `CHANGELOG.md`
+- Removed backup and fonts directories (no longer needed)
+- Switched to Font Awesome CDN (no local font files)
+- Removed all blog, tag, and comment system references
+- Cleaned up unused/empty directories and files
+- Now the repo is minimal, modern, and easy to maintain
 
 ## 🚀 Getting Started
 
@@ -49,105 +62,35 @@ pengdev.github.io/
 
 ### Local Development
 ```bash
-# Install dependencies
 bundle install
-
-# Serve locally
 bundle exec jekyll serve
-
 # Visit http://localhost:4000
 ```
 
 ### Deployment
-The site automatically deploys to GitHub Pages when changes are pushed to the main branch.
+Push to `main` branch to deploy to GitHub Pages.
 
 ## 📄 Pages
 
-### Homepage
-- Professional introduction with feature cards
-- Skills overview (Mobile, Embedded, Full-Stack)
-- Call-to-action for collaboration
-- Clean, modern layout
-
-### About Me
-- Professional avatar with hover effects
-- Comprehensive background and experience
-- Technical skills organized by category
-- Education, awards, and interests
-- Professional contact information
-
-### Projects
-- Featured projects with detailed descriptions
-- Research and development work
-- Product demos and prototypes
-- Academic and thesis projects
-- Technology badges and links
+- **Homepage**: Professional intro, feature cards, CTA
+- **About Me**: Avatar, background, skills, education, interests
+- **Projects**: Featured projects, research, demos, academic work
 
 ## 🎨 Design System
 
-### Colors
-- **Primary**: #43B3E0 (Professional blue)
-- **Background**: #FFFFFF (Clean white)
-- **Text**: #3e3e3e (Dark gray)
-- **Muted Text**: #888 (Light gray)
-- **Border**: #ddd (Light border)
-
-### Typography
-- **Font Family**: Open Sans (Google Fonts)
-- **Headings**: 300-700 weight range
-- **Body**: 300 weight for readability
-- **Code**: Monospace for technical content
-
-### Layout
-- **Container Width**: 1200px max (homepage), 1000px max (content pages)
-- **Grid System**: CSS Grid and Flexbox
-- **Responsive Breakpoints**: 768px, 480px
-- **Spacing**: Consistent padding and margins
+- **Colors**: #43B3E0 (primary), #FFFFFF (background), #3e3e3e (text), #888 (muted), #ddd (border)
+- **Typography**: Open Sans (Google Fonts)
+- **Layout**: 1200px/1000px max width, CSS Grid/Flexbox, responsive
 
 ## 📱 Mobile Optimization
 
-- Fully responsive design with mobile-first approach
-- Touch-friendly navigation and interactions
-- Optimized images and assets
-- Fast loading on mobile networks
-- Proper viewport meta tags
-
-## 🔧 Recent Improvements
-
-### Content Updates
-- ✅ Added professional avatar with hover effects
-- ✅ Refined technical skills and expertise sections
-- ✅ Updated project descriptions and links
-- ✅ Improved contact information and call-to-actions
-- ✅ Aligned content widths across pages for consistency
-
-### Design Enhancements
-- ✅ Modern, clean design with consistent styling
-- ✅ Interactive hover effects and smooth transitions
-- ✅ Professional color scheme and typography
-- ✅ Responsive grid layouts
-- ✅ Optimized spacing and visual hierarchy
-
-### Technical Improvements
-- ✅ Custom CSS for better performance
-- ✅ Optimized image loading and error handling
-- ✅ Consistent layout structure across pages
-- ✅ Improved accessibility and SEO
-- ✅ Clean, maintainable code structure
+- Fully responsive, touch-friendly, fast loading
 
 ## 🔧 Maintenance
 
-### Regular Updates
-- Review and update content monthly
-- Check performance metrics quarterly
-- Refresh projects and skills as needed
-- Update avatar and personal information
-
-### Content Management
-- Add new projects to `projects.md`
-- Update skills and experience in `aboutme.md`
-- Keep contact information current
-- Maintain professional appearance
+- Update content as needed in markdown files
+- Keep avatar and contact info current
+- Review and refresh projects/skills regularly
 
 ## 📚 Resources
 
