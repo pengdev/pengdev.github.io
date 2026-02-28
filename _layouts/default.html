@@ -7,29 +7,34 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     {% seo %}
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
         <div class="container">
-            <nav class="main-nav">
-                <div class="nav-brand">
-                    <a href="{{ '/' | relative_url }}" class="logo">
-                        <img src="{{ '/assets/img/avatar.jpg' | relative_url }}" alt="Liu Peng" class="header-avatar">
-                    </a>
-                </div>
-                <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="{{ '/' | relative_url }}" class="nav-brand" aria-label="Liu Peng – Home">
+                    <img src="{{ '/assets/img/avatar.jpg' | relative_url }}" alt="" class="header-avatar" aria-hidden="true">
+                    <span class="nav-brand-name">Liu Peng</span>
+                </a>
+                <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </button>
-                <ul class="nav-menu">
-                    <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a></li>
-                    <li><a href="{{ '/aboutme' | relative_url }}"{% if page.url contains 'aboutme' %} class="active"{% endif %}>About</a></li>
-                    <li><a href="{{ '/projects' | relative_url }}"{% if page.url contains 'projects' %} class="active"{% endif %}>Projects</a></li>
+                <ul class="nav-menu" id="nav-menu" role="list">
+                    <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a></li>
+                    <li><a href="{{ '/aboutme' | relative_url }}"{% if page.url contains 'aboutme' %} aria-current="page"{% endif %}>About</a></li>
+                    <li><a href="{{ '/projects' | relative_url }}"{% if page.url contains 'projects' %} aria-current="page"{% endif %}>Projects</a></li>
+                    <li>
+                        <a href="mailto:{{ site.social-network-links.email }}" class="nav-cta">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            Contact
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -37,19 +42,71 @@
 
     <main class="site-main">
         {% if page.layout == 'default' and page.url == '/' %}
-            <!-- Hero section for homepage only -->
-            <section class="hero-section">
-                <div class="container">
-                    <div class="hero-content">
-                        <h1 class="hero-title">Hi, I'm Liu Peng 👋</h1>
-                        <p class="hero-subtitle">Software Engineer specializing in mobile development and embedded systems</p>
-                        <div class="hero-actions">
-                            <a href="{{ '/aboutme' | relative_url }}" class="btn btn-primary">Learn More</a>
-                            <a href="{{ '/projects' | relative_url }}" class="btn btn-secondary">View Projects</a>
-                        </div>
+        <!-- Hero section — homepage only -->
+        <section class="hero-section" aria-label="Introduction">
+            <div class="hero-bg-mesh" aria-hidden="true"></div>
+            <div class="hero-grain" aria-hidden="true"></div>
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <div class="hero-eyebrow">
+                        <span class="hero-status-dot" aria-hidden="true"></span>
+                        <span>Open to opportunities</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="hero-name">Liu Peng</span>
+                        <span class="hero-role">Senior Software<br>Engineer</span>
+                    </h1>
+                    <p class="hero-description">
+                        10+ years building products used by millions — from Maps SDK at Mapbox to award-winning mobile apps and embedded systems.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="{{ '/aboutme' | relative_url }}" class="btn btn-primary btn-glow">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            About Me
+                        </a>
+                        <a href="{{ '/projects' | relative_url }}" class="btn btn-ghost">
+                            View Projects
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/{{ site.social-network-links.github }}" class="hero-social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/{{ site.social-network-links.linkedin }}/" class="hero-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:{{ site.social-network-links.email }}" class="hero-social-link" aria-label="Send email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
-            </section>
+                <div class="hero-card-cluster" aria-hidden="true">
+                    <div class="hero-avatar-card glass-card">
+                        <img src="{{ '/assets/img/avatar.jpg' | relative_url }}" alt="Liu Peng" class="hero-avatar-img">
+                        <div class="hero-card-info">
+                            <strong>Liu Peng</strong>
+                            <span>@ Mapbox</span>
+                        </div>
+                    </div>
+                    <div class="hero-stat-card glass-card hero-stat-card--yrs">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="hero-stat-card glass-card hero-stat-card--award">
+                        <i class="fas fa-trophy" aria-hidden="true"></i>
+                        <span class="stat-label">CES 2017</span>
+                    </div>
+                    <div class="hero-stat-card glass-card hero-stat-card--proj">
+                        <span class="stat-number">13</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator" aria-hidden="true">
+                <div class="scroll-line"></div>
+            </div>
+        </section>
         {% endif %}
 
         <div class="content-wrapper">
@@ -60,40 +117,142 @@
     </main>
 
     <footer class="site-footer">
+        <div class="footer-aurora" aria-hidden="true"></div>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="{{ '/' | relative_url }}" class="footer-logo">
+                        <img src="{{ '/assets/img/avatar.jpg' | relative_url }}" alt="Liu Peng" class="footer-avatar">
+                        <strong>Liu Peng</strong>
+                    </a>
+                    <p class="footer-tagline">Senior Software Engineer. Building for millions at Mapbox.</p>
                 </div>
-                <div class="footer-social">
-                    <a href="mailto:{{ site.social-network-links.email }}" class="social-link">Email</a>
-                    <a href="https://github.com/{{ site.social-network-links.github }}" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://www.linkedin.com/in/{{ site.social-network-links.linkedin }}/" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <div class="footer-links">
+                    <p class="footer-links-heading">Navigation</p>
+                    <ul>
+                        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                        <li><a href="{{ '/aboutme' | relative_url }}">About</a></li>
+                        <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
+                    </ul>
                 </div>
+                <div class="footer-social-col">
+                    <p class="footer-links-heading">Connect</p>
+                    <div class="footer-social-icons">
+                        <a href="https://github.com/{{ site.social-network-links.github }}" class="footer-icon-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/{{ site.social-network-links.linkedin }}/" class="footer-icon-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:{{ site.social-network-links.email }}" class="footer-icon-link" aria-label="Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; {{ site.time | date: '%Y' }} Liu Peng. Built with Jekyll &amp; deployed on GitHub Pages.</p>
             </div>
         </div>
     </footer>
+
     <script>
-        (function() {
-            var toggle = document.querySelector('.nav-toggle');
-            var menu = document.querySelector('.nav-menu');
-            if (toggle && menu) {
-                toggle.addEventListener('click', function() {
-                    var expanded = toggle.getAttribute('aria-expanded') === 'true';
-                    toggle.setAttribute('aria-expanded', String(!expanded));
-                    toggle.classList.toggle('active');
-                    menu.classList.toggle('open');
+    (function() {
+        // === MOBILE NAV TOGGLE ===
+        var toggle = document.querySelector('.nav-toggle');
+        var menu = document.getElementById('nav-menu');
+        if (toggle && menu) {
+            toggle.addEventListener('click', function() {
+                var expanded = toggle.getAttribute('aria-expanded') === 'true';
+                toggle.setAttribute('aria-expanded', String(!expanded));
+                toggle.classList.toggle('active');
+                menu.classList.toggle('open');
+            });
+            menu.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    toggle.setAttribute('aria-expanded', 'false');
+                    toggle.classList.remove('active');
+                    menu.classList.remove('open');
                 });
-                // Close menu when a nav link is clicked
-                menu.querySelectorAll('a').forEach(function(link) {
-                    link.addEventListener('click', function() {
-                        toggle.setAttribute('aria-expanded', 'false');
-                        toggle.classList.remove('active');
-                        menu.classList.remove('open');
+            });
+        }
+
+        // === SCROLL-AWARE HEADER ===
+        var header = document.getElementById('site-header');
+        if (header) {
+            var onScroll = function() {
+                if (window.scrollY > 20) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            };
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        }
+
+        // === INTERSECTION OBSERVER — REVEAL ON SCROLL ===
+        if ('IntersectionObserver' in window) {
+            var revealObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.10,
+                rootMargin: '0px 0px -40px 0px'
+            });
+
+            document.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
+                revealObserver.observe(el);
+            });
+        } else {
+            // Fallback: show everything immediately
+            document.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
+                el.classList.add('revealed');
+            });
+        }
+
+        // === PROJECTS FILTER ===
+        var filterBtns = document.querySelectorAll('.filter-btn');
+        var projectSections = document.querySelectorAll('[data-section]');
+        if (filterBtns.length > 0 && projectSections.length > 0) {
+            filterBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(function(b) { b.classList.remove('active'); });
+                    btn.classList.add('active');
+                    var filter = btn.getAttribute('data-filter');
+                    projectSections.forEach(function(section) {
+                        if (filter === 'all' || section.getAttribute('data-section') === filter) {
+                            section.style.display = '';
+                        } else {
+                            section.style.display = 'none';
+                        }
                     });
                 });
-            }
-        })();
+            });
+        }
+
+        // === EXPERIENCE TOGGLE ===
+        var expBtn = document.getElementById('toggle-experience');
+        var expMore = document.getElementById('more-experience');
+        if (expBtn && expMore) {
+            var expExpanded = false;
+            expBtn.addEventListener('click', function() {
+                expExpanded = !expExpanded;
+                expMore.style.display = expExpanded ? 'block' : 'none';
+                expBtn.textContent = expExpanded ? 'Show less' : 'Show all experience';
+                // Observe newly revealed elements
+                if (expExpanded && 'IntersectionObserver' in window) {
+                    expMore.querySelectorAll('.reveal-on-scroll').forEach(function(el) {
+                        el.classList.add('revealed');
+                    });
+                }
+            });
+        }
+    })();
     </script>
 </body>
-</html> 
+</html>
