@@ -14,7 +14,7 @@ This is the source code for Liu Peng's personal website, built with Jekyll and G
 - Two-column layout for education and awards sections
 - Interests & Activities section with cards and Font Awesome icons
 - Active navigation highlighting based on current page
-- Accessible: skip-to-content link, ARIA labels on interactive elements
+- Accessible: ARIA labels on interactive elements
 - Automatic deployment via GitHub Pages
 
 ## 🗂️ Project Structure
