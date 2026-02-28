@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     {% seo %}
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header class="site-header">
         <div class="container">
             <nav class="main-nav">
@@ -18,16 +23,21 @@
                         <img src="{{ '/assets/img/avatar.jpg' | relative_url }}" alt="Liu Peng" class="header-avatar">
                     </a>
                 </div>
+                <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-menu">
-                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                    <li><a href="{{ '/aboutme' | relative_url }}">About</a></li>
-                    <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
+                    <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a></li>
+                    <li><a href="{{ '/aboutme' | relative_url }}"{% if page.url contains 'aboutme' %} class="active"{% endif %}>About</a></li>
+                    <li><a href="{{ '/projects' | relative_url }}"{% if page.url contains 'projects' %} class="active"{% endif %}>Projects</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="site-main">
+    <main class="site-main" id="main-content">
         {% if page.layout == 'default' and page.url == '/' %}
             <!-- Hero section for homepage only -->
             <section class="hero-section">
@@ -59,11 +69,33 @@
                 </div>
                 <div class="footer-social">
                     <a href="mailto:{{ site.social-network-links.email }}" class="social-link">Email</a>
-                    <a href="https://github.com/{{ site.social-network-links.github }}" class="social-link">GitHub</a>
-                    <a href="https://www.linkedin.com/in/{{ site.social-network-links.linkedin }}/" class="social-link">LinkedIn</a>
+                    <a href="https://github.com/{{ site.social-network-links.github }}" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/{{ site.social-network-links.linkedin }}/" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        (function() {
+            var toggle = document.querySelector('.nav-toggle');
+            var menu = document.querySelector('.nav-menu');
+            if (toggle && menu) {
+                toggle.addEventListener('click', function() {
+                    var expanded = toggle.getAttribute('aria-expanded') === 'true';
+                    toggle.setAttribute('aria-expanded', String(!expanded));
+                    toggle.classList.toggle('active');
+                    menu.classList.toggle('open');
+                });
+                // Close menu when a nav link is clicked
+                menu.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        toggle.setAttribute('aria-expanded', 'false');
+                        toggle.classList.remove('active');
+                        menu.classList.remove('open');
+                    });
+                });
+            }
+        })();
+    </script>
 </body>
 </html> 
