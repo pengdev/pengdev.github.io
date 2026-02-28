@@ -1,9 +1,25 @@
-<div class="experience-item{% if include.class %} {{ include.class }}{% endif %}">
-    <h3>{{ include.title }}</h3>
-    <p class="company">{{ include.company }}</p>
-    <ul>
-        {% for item in include.items %}
-        <li>{{ item }}</li>
-        {% endfor %}
-    </ul>
-</div> 
+<div class="timeline-item{% if include.class %} {{ include.class }}{% endif %} reveal-on-scroll">
+    <div class="timeline-connector" aria-hidden="true">
+        <div class="timeline-dot"></div>
+        <div class="timeline-line"></div>
+    </div>
+    <div class="timeline-card">
+        <div class="timeline-header">
+            <div class="timeline-title-group">
+                <h3 class="timeline-role">{{ include.title }}</h3>
+                <p class="timeline-company">{{ include.company }}</p>
+            </div>
+            {% if include.class == 'current' %}
+            <span class="timeline-badge--current" aria-label="Current role">
+                <span class="badge-dot" aria-hidden="true"></span>
+                Current
+            </span>
+            {% endif %}
+        </div>
+        <ul class="timeline-achievements">
+            {% for item in include.items %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
