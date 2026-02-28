@@ -30,24 +30,6 @@
     }
 }
 
-/* Skip-to-content accessibility link */
-.skip-link {
-    position: absolute;
-    top: -100%;
-    left: 1rem;
-    z-index: 9999;
-    background: var(--primary);
-    color: white;
-    padding: 0.6rem 1.2rem;
-    border-radius: var(--radius);
-    font-weight: 600;
-    text-decoration: none;
-    transition: top 0.2s ease;
-}
-
-.skip-link:focus {
-    top: 1rem;
-}
 
 * {
     margin: 0;
