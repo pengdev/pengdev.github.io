@@ -198,7 +198,7 @@ ul, ol { list-style: none; }
 
 /* Content wrapper after hero */
 .content-wrapper {
-    padding: var(--space-16) 0;
+    padding: 0 0 var(--space-16);
 }
 
 /* Glass Card Utility */
@@ -220,6 +220,7 @@ ul, ol { list-style: none; }
 /* Section Headers */
 .section-header {
     margin-bottom: var(--space-12);
+    text-align: center;
 }
 
 .section-eyebrow {
@@ -888,7 +889,7 @@ strong { color: var(--text); font-weight: 600; }
     .bento-card { background: var(--bg-elevated); }
 }
 
-.bento-card--wide  { grid-row: 1 / 3; }
+.bento-card--wide         { grid-column: 1; grid-row: 1 / 3; }
 .bento-card--right-top    { grid-column: 2; grid-row: 1; }
 .bento-card--right-bottom { grid-column: 2; grid-row: 2; }
 
@@ -997,10 +998,12 @@ strong { color: var(--text); font-weight: 600; }
    ============================================================ */
 
 .about-hero {
-    padding: var(--space-20) 0 var(--space-12);
+    padding: var(--space-20) var(--space-6) var(--space-12);
     text-align: center;
     position: relative;
     overflow: hidden;
+    margin-left: calc(-1 * var(--space-6));
+    margin-right: calc(-1 * var(--space-6));
 }
 
 .about-hero-bg {
@@ -1685,8 +1688,10 @@ strong { color: var(--text); font-weight: 600; }
 .projects-hero {
     position: relative;
     overflow: hidden;
-    padding: var(--space-20) 0 var(--space-12);
+    padding: var(--space-20) var(--space-6) var(--space-12);
     text-align: center;
+    margin-left: calc(-1 * var(--space-6));
+    margin-right: calc(-1 * var(--space-6));
 }
 
 .projects-hero-bg {
@@ -1783,7 +1788,6 @@ strong { color: var(--text); font-weight: 600; }
                 box-shadow var(--dur-normal),
                 border-color var(--dur-normal);
     position: relative;
-    margin-bottom: var(--space-5);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1821,12 +1825,6 @@ strong { color: var(--text); font-weight: 600; }
 .project-card.featured::before,
 .featured-project::before { opacity: 1; }
 
-.project-card > *,
-.featured-project > * {
-    padding-left: var(--space-6);
-    padding-right: var(--space-6);
-}
-
 /* Inside project cards */
 .project-header {
     display: flex;
@@ -1834,7 +1832,7 @@ strong { color: var(--text); font-weight: 600; }
     align-items: flex-start;
     gap: var(--space-3);
     flex-wrap: wrap;
-    padding-top: var(--space-6);
+    padding: var(--space-6) var(--space-6) 0;
     margin-bottom: var(--space-3);
 }
 
@@ -1992,7 +1990,6 @@ strong { color: var(--text); font-weight: 600; }
 .site-footer {
     position: relative;
     overflow: hidden;
-    margin-top: var(--space-24);
     border-top: 1px solid var(--border);
     padding: var(--space-16) 0 var(--space-8);
     background: var(--bg-secondary);
@@ -2215,7 +2212,7 @@ strong { color: var(--text); font-weight: 600; }
 
 @media (max-width: 768px) {
     .container { padding: 0 var(--space-4); }
-    .content-wrapper { padding: var(--space-10) 0; }
+    .content-wrapper { padding: 0 0 var(--space-10); }
 
     h1 { font-size: var(--text-3xl); }
     h2 { font-size: var(--text-2xl); }
@@ -2229,16 +2226,11 @@ strong { color: var(--text); font-weight: 600; }
     .timeline-item { grid-template-columns: 24px 1fr; gap: var(--space-3); }
     .timeline-card { padding: var(--space-4); }
 
-    .project-card > *,
-    .featured-project > * {
-        padding-left: var(--space-4);
-        padding-right: var(--space-4);
-    }
-
+    .project-header { padding: var(--space-4) var(--space-4) 0; }
     .project-tech { padding-left: var(--space-4); padding-right: var(--space-4); }
     .project-description { padding-left: var(--space-4); padding-right: var(--space-4); }
     .project-tech-chips { padding-left: var(--space-4); padding-right: var(--space-4); }
-    .project-links { padding-left: var(--space-4); padding-right: var(--space-4); }
+    .project-links { padding: var(--space-3) var(--space-4); }
 }
 
 @media (max-width: 480px) {
@@ -2246,6 +2238,14 @@ strong { color: var(--text); font-weight: 600; }
     .bento-card { padding: var(--space-5); }
     .awards-grid { grid-template-columns: 1fr; }
 
-    .projects-hero { padding: var(--space-12) 0 var(--space-8); }
-    .about-hero { padding: var(--space-12) 0 var(--space-8); }
+    .projects-hero {
+        padding: var(--space-12) var(--space-4) var(--space-8);
+        margin-left: calc(-1 * var(--space-4));
+        margin-right: calc(-1 * var(--space-4));
+    }
+    .about-hero {
+        padding: var(--space-12) var(--space-4) var(--space-8);
+        margin-left: calc(-1 * var(--space-4));
+        margin-right: calc(-1 * var(--space-4));
+    }
 }
