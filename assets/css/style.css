@@ -464,7 +464,6 @@ strong { color: var(--text); font-weight: 600; }
         display: block;
         padding: var(--space-3) var(--space-6);
         border-radius: 0;
-        width: 100%;
     }
 
     .nav-cta {
