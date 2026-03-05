@@ -5,6 +5,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 3.8.0"
 gem "webrick", "~> 1.4"
 gem "csv"
+gem "rexml"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
