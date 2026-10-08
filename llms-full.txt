@@ -35,12 +35,15 @@ Worked on diverse projects from consumer mobile apps to enterprise IoT solutions
 {{ award.description }}
 {% endfor %}
 ## Projects
-{% for project in site.data.projects %}
-### {{ project.title }}{% if project.badge %} ({{ project.badge }}){% endif %}
+{% for category in site.data.projects %}
+### {{ category[0] | capitalize }}
+{% for project in category[1] %}
+#### {{ project.title }}{% if project.badge %} ({{ project.badge }}){% endif %}
 Tech: {{ project.tech }}
 
 {{ project.description | strip_html }}
 {% for link in project.links %}- [{{ link.text }}]({{ link.url }})
+{% endfor %}
 {% endfor %}
 {% endfor %}
 ## Interests
