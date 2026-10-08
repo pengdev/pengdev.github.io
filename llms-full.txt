@@ -1,0 +1,49 @@
+---
+layout: null
+permalink: /llms-full.txt
+---
+# Liu Peng
+
+Staff Software Engineer at Mapbox, building the Maps SDK for Android used by millions of developers worldwide. 13+ years of experience in mobile development, embedded systems, and full-stack applications.
+
+Contact: {{ site.social-network-links.email }} | GitHub: https://github.com/{{ site.social-network-links.github }} | LinkedIn: https://www.linkedin.com/in/{{ site.social-network-links.linkedin }}/
+
+## About
+
+Staff software engineer with over 13 years of experience in mobile development, embedded systems, and full-stack applications. Drives technical direction and architecture decisions across teams, with expertise in Android development, SDK development, multimedia streaming, and mapping technologies.
+
+Worked on diverse projects from consumer mobile apps to enterprise IoT solutions, with a strong focus on quality, performance, clean maintainable code, and exceptional user experiences. Contributes to open source projects and shares knowledge with the developer community.
+
+## Experience
+{% for job in site.data.experience %}
+### {{ job.title }}
+{{ job.company }}
+{% for item in job.items %}- {{ item | strip_html }}
+{% endfor %}
+{% endfor %}
+## Skills
+{% for group in site.data.skills %}
+### {{ group.category }}
+{% for skill in group.skills %}- {{ skill }}
+{% endfor %}
+{% endfor %}
+## Awards
+{% for award in site.data.awards %}
+### {{ award.title }}
+{{ award.issuer }}
+
+{{ award.description }}
+{% endfor %}
+## Projects
+{% for project in site.data.projects %}
+### {{ project.title }}{% if project.badge %} ({{ project.badge }}){% endif %}
+Tech: {{ project.tech }}
+
+{{ project.description | strip_html }}
+{% for link in project.links %}- [{{ link.text }}]({{ link.url }})
+{% endfor %}
+{% endfor %}
+## Interests
+
+{% for interest in site.data.interests %}- **{{ interest.title }}**: {{ interest.description }}
+{% endfor %}

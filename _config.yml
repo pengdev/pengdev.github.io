@@ -15,25 +15,8 @@ title: Liu Peng
 # Your name to show in the footer
 author: Liu Peng
 
-###############################################
-# --- List of links in the navigation bar --- #
-###############################################
-
-navbar-links:
-  About: "aboutme"
-  Projects: "projects"
-  Contact: "contact"
-
-################
-# --- Logo --- #
-################
-
-# Image to show in the navigation bar - works best with a square image
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
-
-# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+# Default meta description, used on any page without its own `description`
+description: "Liu Peng is a Staff Software Engineer at Mapbox, building the Maps SDK for Android used by millions of developers worldwide."
 
 #####################################
 # --- Footer social media links --- #
@@ -86,7 +69,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "Liu Peng, Software Engineer, Mobile Development, Embedded Systems, Portfolio"
+keywords: "Liu Peng, Staff Software Engineer, Mobile Development, Embedded Systems, Portfolio"
 
 ######################################
 # --- Colours / background image --- #

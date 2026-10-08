@@ -3,7 +3,7 @@ featured:
     badge: "Current"
     badge_type: ""
     tech: "Android • OpenGL • Vector Tiles • C++ • Kotlin"
-    description: "Contributing to the core mapping technology used by millions of developers worldwide. Developing interactive, thoroughly customizable maps powered by vector tiles and OpenGL for native Android applications. Working on Mobile SDK V10 with advanced customization capabilities."
+    description: "Driving technical direction for the core mapping technology used by millions of developers worldwide. Setting architecture and engineering standards for interactive, thoroughly customizable maps powered by vector tiles and OpenGL on native Android. Leading work on Mobile SDK V10's advanced customization capabilities."
     links:
       - text: "View on GitHub"
         url: "https://github.com/mapbox/mapbox-maps-android"

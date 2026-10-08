@@ -1,0 +1,19 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# Liu Peng
+
+> Staff Software Engineer at Mapbox, building the Maps SDK for Android used by millions of developers worldwide. 13+ years across mobile development, embedded systems, and full-stack applications.
+
+## Pages
+
+- [About]({{ "/aboutme" | absolute_url }}): Background, work experience, skills, education, and awards
+- [Projects]({{ "/projects" | absolute_url }}): Featured projects, SDKs, and research work
+- [Full site content]({{ "/llms-full.txt" | absolute_url }}): All content on this site in a single markdown file
+
+## Contact
+
+- Email: {{ site.social-network-links.email }}
+- GitHub: https://github.com/{{ site.social-network-links.github }}
+- LinkedIn: https://www.linkedin.com/in/{{ site.social-network-links.linkedin }}/
