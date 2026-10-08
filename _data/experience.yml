@@ -1,10 +1,18 @@
-- title: "Senior Software Engineer, Maps SDK"
-  company: "Mapbox • Helsinki, Finland • Sep 2019 - Present"
+- title: "Staff Software Engineer, Maps SDK"
+  company: "Mapbox • Helsinki, Finland • Oct 2026 - Present"
   items:
-    - "Building Mapbox Maps SDK for Android, developing interactive and thoroughly customizable maps powered by vector tiles and OpenGL"
-    - "Working on Mobile SDK V10, contributing to the core mapping technology used by millions of developers worldwide"
-    - "Developing native Android mapping solutions with advanced customization capabilities"
-    - "Collaborating with cross-functional teams to deliver high-performance mapping solutions"
+    - "Promoted to Staff Software Engineer in recognition of technical leadership on the Maps SDK for Android"
+    - "Driving technical direction and architecture decisions across teams"
+    - "Mentoring engineers and setting engineering standards"
+    - "Partnering with cross-functional stakeholders to shape roadmap and technical strategy for mapping technology used by millions of developers worldwide"
+
+- title: "Senior Software Engineer, Maps SDK"
+  company: "Mapbox • Helsinki, Finland • Sep 2019 - Oct 2026"
+  items:
+    - "Built Mapbox Maps SDK for Android, developing interactive and thoroughly customizable maps powered by vector tiles and OpenGL"
+    - "Worked on Mobile SDK V10, contributing to the core mapping technology used by millions of developers worldwide"
+    - "Developed native Android mapping solutions with advanced customization capabilities"
+    - "Collaborated with cross-functional teams to deliver high-performance mapping solutions"
 
 - title: "Software Engineer"
   company: "Tuxera • Helsinki, Finland • Jun 2013 - Aug 2019"

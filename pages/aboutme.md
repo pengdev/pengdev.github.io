@@ -9,14 +9,14 @@ permalink: /aboutme/
     <div class="avatar-section">
         <div class="avatar-ring-wrap">
             <div class="avatar">
-                <img src="/assets/img/avatar.jpg" alt="Liu Peng - Senior Software Engineer" loading="eager" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <img src="/assets/img/avatar.jpg" alt="Liu Peng - Staff Software Engineer" loading="eager" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="avatar-fallback" style="display: none;">LP</div>
             </div>
         </div>
         <h1>Liu Peng</h1>
         <span class="role-badge">
             <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-            Senior Software Engineer @ Mapbox
+            Staff Software Engineer @ Mapbox
         </span>
         <p class="subtitle">Mobile Development &bull; Embedded Systems &bull; Full-Stack</p>
     </div>
@@ -25,7 +25,7 @@ permalink: /aboutme/
 <div class="about-content">
     <section class="about-section reveal-on-scroll">
         <h2>About Me</h2>
-        <p>Hi, I'm <strong>Liu Peng</strong>, a senior software engineer with over 10 years of experience in mobile development, embedded systems, and full-stack applications. I specialize in creating innovative solutions that bridge hardware and software, with expertise in Android development, SDK development, multimedia streaming, and mapping technologies.</p>
+        <p>Hi, I'm <strong>Liu Peng</strong>, a staff software engineer with over 10 years of experience in mobile development, embedded systems, and full-stack applications. I specialize in creating innovative solutions that bridge hardware and software, with expertise in Android development, SDK development, multimedia streaming, and mapping technologies.</p>
         <p>Throughout my career, I've worked on diverse projects from consumer mobile apps to enterprise IoT solutions. I have a strong focus on quality and performance, believing in writing clean, maintainable code and creating exceptional user experiences. When I'm not coding, I enjoy contributing to open source projects and sharing knowledge with the developer community.</p>
     </section>
 
