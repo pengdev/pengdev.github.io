@@ -772,6 +772,12 @@ strong { color: var(--text); font-weight: 600; }
     margin-bottom: var(--space-1);
 }
 
+.stat-emoji {
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-bottom: var(--space-1);
+}
+
 .hero-stat-card--yrs {
     top: 5%;
     right: 0;
