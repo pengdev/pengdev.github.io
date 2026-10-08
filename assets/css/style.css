@@ -790,6 +790,12 @@ strong { color: var(--text); font-weight: 600; }
     animation-delay: -3.5s;
 }
 
+.hero-stat-card--hobby {
+    top: 5%;
+    left: 0;
+    animation-delay: -4.5s;
+}
+
 .stat-number {
     font-size: var(--text-3xl);
     font-weight: 800;
